@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location de moules à gâteaux</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff8f6;
+      color: #333;
+    }
+    header {
+      background-color: #f8c6d0;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 5px 0 0;
+    }
+    nav {
+      background-color: #f2a7b3;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #fff0f5;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .btn {
+      background-color: #f2a7b3;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #e58a9c;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #d46a7e;
+    }
+    .catalogue {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .moule {
+      background: #fff;
+      border: 2px solid #f8c6d0;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+    }
+    .moule img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .moule h3 {
+      margin: 10px 0 5px;
+      color: #d46a7e;
+    }
+    .moule p {
+      margin: 5px 0;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: auto;
+    }
+    form input, form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    form button {
+      background-color: #f2a7b3;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #e58a9c;
+    }
+    footer {
+      background-color: #f8c6d0;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🎂 Location de moules à gâteaux</h1>
+    <p>Économique, pratique et écologique</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#catalogue">Catalogue</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h2>Louez des moules uniques pour vos fêtes et événements</h2>
+    <a href="#catalogue" class="btn">Voir le catalogue</a>
+  </div>
+
+  <!-- Catalogue -->
+  <section id="catalogue">
+    <h2>Nos moules disponibles</h2>
+    <div class="catalogue">
+      <div class="moule">
+        <img src="images/image1.jpg" alt="Moule coeur">
+        <h3>Moule en forme de cœur</h3>
+        <p>5 $ / jour</p>
+      </div>
+      <div class="moule">
+        <img src="images/image2.jpg" alt="Moule château">
+        <h3>Moule château</h3>
+        <p>10 $ / jour</p>
+      </div>
+      <div class="moule">
+        <img src="images/image3.jpg" alt="Moule voiture">
+        <h3>Moule voiture</h3>
+        <p>8 $ / jour</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section id="apropos">
+    <h2>À propos</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      Notre mission est de rendre la pâtisserie accessible à tous. 
+      Plutôt que d’acheter un moule cher que vous n’utiliserez qu’une fois, 
+      louez-le à petit prix et réalisez vos plus beaux gâteaux sans vous ruiner !
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact et réservation</h2>
+    <form>
+      <input type="text" placeholder="Nom complet" required>
+      <input type="email" placeholder="Adresse e-mail" required>
+      <input type="text" placeholder="Moule désiré" required>
+      <input type="date" placeholder="Date de location" required>
+      <textarea rows="5" placeholder="Message ou demande spéciale"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Location de moules à gâteaux – Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>
